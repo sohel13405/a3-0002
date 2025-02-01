@@ -21,11 +21,26 @@
 </head>
 <body class="sora">
        <header class=" mx-auto w-full mb-12 lg:mb-28 lg:h-[1290px] bg-gradient-to-b from-[#ffff] to-[#EFEBE3]">
-           <nav class="w-full lg:w-[1320px] mx-auto lg:flex items-center justify-between mt-10">
+           <nav class="w-full lg:w-[1320px] mx-auto lg:flex items-center justify-between lg:mt-10">
             <!-- logo  -->
-             <div class="">
+             <div class="hidden lg:block">
                 <img class="" src="./images/logo-header.png" alt="">
              </div>
+             <!-- for small device  -->
+             <div class="lg:hidden flex items-center justify-between px-4 border border-[#179800] py-3 ">
+                <div class="lg:hidden"><img class="w-16 h-16" src="./images/leave.png" alt=""></div>
+             
+             <div>
+                   <!-- hamburger  -->
+            <div class="lg:hidden ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+               </div><!-- hamburger  -->
+             </div>
+             </div> 
+             
+             <!-- for small device  -->
 
              <!-- nav menu  -->
               <div class="lg:ml-[340px] hidden lg:block">
@@ -51,14 +66,7 @@
                </div>   
                </div>
 
-                <!-- hamburger  -->
-            <div class="lg:hidden ">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                  </svg>
-               </div>
-              
-               <!-- hamburger  -->
+             
                
            </nav>
 
@@ -84,47 +92,47 @@
        <main>
         <!-- our product  -->
          <div class="w-full lg:w-[1320px] mx-auto text-center mb-9 lg:mb-20">
-            <h1 class="text-xl lg:text-4xl font-bold text-[#179800]">Our Products</h1>
+            <h1 class="text-3xl font-bold  lg:text-4xl lg:font-bold text-[#179800]">Our Products</h1>
          </div>
 
          <!-- products  -->
-          <div class="all-products w-full lg:w-[1320px] mx-auto ml-20 lg:ml-auto space-y-16 lg:space-y-0 lg:flex justify-between ">
+          <div class="all-products w-[90%] lg:w-[1320px] mx-auto   lg:space-y-0  grid justify-center lg:justify-center grid-cols-2 gap-5 lg:grid-cols-5 items-center  lg:items-center  lg:gap-10 ">
 
 
 
-           <div class="card w-[200Px] lg:w-[200px] items-center space-y-3">
+           <div class="card w-[150Px] lg:w-[200px] items-center space-y-3">
             <div class=" bg-[#edeb8dc6] rounded-full p-3 drop-shadow-xl skeleton ">
                 <img src="./images/coconut.png" alt="">
             </div>
-            <h3 class="text-xl lg:text-2xl text-[#8a8787] font-bold">Coconut</h3>
+            <h3 class="text-[20px] lg:text-2xl text-[#8a8787] font-bold">Coconut</h3>
            </div>
 
-           <div class="card w-[200Px] lg:w-[200px] items-center space-y-3">
+           <div class="card w-[150Px] lg:w-[200px] items-center space-y-3">
             <div class=" bg-[#ece4d4] rounded-full p-3 drop-shadow-xl skeleton ">
                 <img src="./images/watermelon.png" alt="">
             </div>
-            <h3 class="text-xl lg:text-2xl text-[#8a8787] font-bold">Watermelon</h3>
+            <h3 class="text-[20px]  lg:text-2xl text-[#8a8787] font-bold">Watermelon</h3>
            </div>
 
-           <div class="card w-[200Px] lg:w-[200px]  items-center space-y-3">
+           <div class="card w-[150Px] lg:w-[200px]  items-center space-y-3">
             <div class=" bg-[#76bc72] rounded-full p-4 drop-shadow-xl skeleton ">
                 <img src="./images/cabbage.png" alt="">
             </div>
-            <h3 class="text-xl lg:text-2xl text-[#8a8787] font-bold">Cabbage</h3>
+            <h3 class="text-[20px]  lg:text-2xl text-[#8a8787] font-bold">Cabbage</h3>
            </div>
 
-           <div class="card w-[200Px] lg:w-[200px]  items-center space-y-3">
+           <div class="card w-[150Px] lg:w-[200px]  items-center space-y-3">
             <div class=" bg-[#ece4d4] rounded-full p-3 drop-shadow-xl skeleton ">
                 <img src="./images/tomatoo.png" alt="">
             </div>
-            <h3 class="text-xl lg:text-2xl text-[#8a8787] font-bold">Tomato</h3>
+            <h3 class="text-[20px]  lg:text-2xl text-[#8a8787] font-bold">Tomato</h3>
            </div>
 
-           <div class="card w-[200Px] lg:w-[200px]  items-center space-y-3">
+           <div class="card hidden lg:block w-[150Px] lg:w-[200px]  items-center space-y-3">
             <div class=" bg-[#edeb8dc6] rounded-full p-3 drop-shadow-xl skeleton ">
                 <img src="./images/mango.png" alt="">
             </div>
-            <h3 class="text-xl lg:text-2xl text-[#8a8787] font-bold">Mango</h3>
+            <h3 class="text-[20px]  lg:text-2xl text-[#8a8787] font-bold">Mango</h3>
            </div>
 
 
@@ -145,34 +153,34 @@
 
                 <div class="cart-1  bg-[#EFEBE3] m-4 lg:m-0 p-8 lg:p-16 space-y-4 rounded-2xl">
                     <!-- image div  -->
-                     <div class="flex justify-center"><img class="bg-white rounded-full p-2" src="./images/service.png" alt="">
+                     <div class="flex justify-center"><img class="bg-white rounded-full p-6 " src="./images/service.png" alt="">
                     </div>
                     <!-- text  -->
                      <div class="space-y-4">
                         <h2 class="text-2xl font-semibold text-center">24/7 Services </h2>
-                        <p class="text-xl font-light text-center">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt</p>
+                        <p class="text-xl font-light text-center">24/7 customer support <br>  refers to providing assistance <br> and resolving queries for customers.</p>
                      </div>
                  </div>
 
                  <div class="cart-2  bg-[#EFEBE3] m-4 lg:m-0 p-8 lg:p-16 space-y-4 rounded-2xl">
                     <!-- image div  -->
-                     <div class="flex justify-center"><img class="bg-white rounded-full p-2" src="./images/delivery.png" alt="">
+                     <div class="flex justify-center"><img class="bg-white rounded-full p-6" src="./images/delivery.png" alt="">
                     </div>
                     <!-- text  -->
                      <div class="space-y-4">
                         <h2 class="text-2xl font-semibold text-center">Fast Delivery</h2>
-                        <p class="text-xl font-light text-center">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt</p>
+                        <p class="text-xl font-light text-center">any delivery that gets <br> quickly  after an order is placed the<br> delivery is  purchase</p>
                      </div>
                  </div>
 
                  <div class="cart-3  bg-[#EFEBE3] m-4 lg:m-0 p-8 lg:p-16 space-y-4 rounded-2xl">
                     <!-- image div  -->
-                     <div class="flex justify-center"><img class="bg-white rounded-full p-2" src="./images/healthy.png" alt="">
+                     <div class="flex justify-center"><img class="bg-white rounded-full p-6" src="./images/healthy.png" alt="">
                     </div>
                     <!-- text  -->
                      <div class="space-y-4">
                         <h2 class="text-2xl font-semibold text-center">Healthy Products  </h2>
-                        <p class="text-xl font-light text-center">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt</p>
+                        <p class="text-xl font-light text-center">Healthy food is crucial for<br>  giving us energy and keeping<br> our bodies which help us and satisfied.</p>
                      </div>
                  </div>
 
